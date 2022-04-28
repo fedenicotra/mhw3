@@ -1,0 +1,83 @@
+/* TODO: inserite il CSS necessario per completare il MHW! */
+
+.choice-grid{
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-between;
+	justify-content: space-between;
+}
+
+.choice-grid div{
+	display: flex;
+	flex-direction: column;
+	background-color: #f4f4f4;
+	width: 32.5%;
+	padding: 10px;
+	margin-bottom: 20px;
+	border: 1px solid #dcdcdc;
+	box-sizing: border-box;
+}
+.choice-grid div:hover{
+	cursor: pointer;
+}
+
+div.unchecked{
+	opacity: 0.6;
+}
+
+div.selected{
+	background-color: #cfe3ff;
+}
+
+.hidden{
+	display: none;
+}
+
+.button{
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	background-color: #cecece;
+	height: 50px;
+	margin: 10px;
+}
+
+.button:hover{
+	background-color: #e0e0e0;
+	cursor: pointer;
+}
+
+.results{
+	margin-top: 40px;
+	margin-bottom: 20px;
+	padding: 20px;
+}
+
+.results img{
+	width: 50%;
+	border-radius: 10px;
+}
+
+#descr{
+	text-align: center;
+}
+
+#descr p{
+	margin: 18px 0px;
+}
+
+
+@media(max-width: 700px){
+	article{
+		width: 95%;
+	}
+	header div{
+		display: none;
+	}
+}
+
+@media(max-width: 500px){
+	.choice-grid div{
+		width: 49%;
+	}
+}
